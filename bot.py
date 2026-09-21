@@ -16,13 +16,13 @@ import qrcode
 from io import BytesIO
 
 # ==================== CONFIG ====================
-BOT_TOKEN = "8602849042:AAFtv3A_tavPc_T4jlmxd1aybtiK-C8qPZQ"
-ADMIN_IDS = [6872602644]
+BOT_TOKEN = "8602849042:AAHCGsAPtTV-MfXr_ZDXkqotLqtbI8h3mEY"
+ADMIN_IDS = [8602849042]
 DATABASE_PATH = 'bot_database.db'
 PORT = int(os.getenv('PORT', 8080))
 
-if not BOT_TOKEN or BOT_TOKEN == "8602849042:AAFtv3A_tavPc_T4jlmxd1aybtiK-C8qPZQ":
-    print("❌8602849042:AAFtv3A_tavPc_T4jlmxd1aybtiK-C8qPZQ!")
+if not BOT_TOKEN or BOT_TOKEN == "8602849042:AAHCGsAPtTV-MfXr_ZDXkqotLqtbI8h3mEY":
+    print("❌8602849042:AAHCGsAPtTV-MfXr_ZDXkqotLqtbI8h3mEY!")
     sys.exit(1)
 
 # ==================== LOGGING ====================
@@ -30,7 +30,7 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO
 )
-logger = logging.getLogger(__name__)
+logger = logging.getLogger(__BROH__)
 
 # ==================== QR GENERATOR ====================
 def generate_upi_qr(upi_id, amount, plan_name):
@@ -122,7 +122,7 @@ class Database:
         defaults = [
             ('welcome_image', ''),
             ('welcome_text', 'Welcome to Premium Bot! 🎉\n\nGet exclusive access to premium content\nAffordable plans starting at just ₹0'),
-            ('bot_name', 'PREMIUM BOT'),
+            ('bot_name', 'PREMIUM POM'),
             ('upi_id', ''),
             ('welcome_video', '')
         ]
