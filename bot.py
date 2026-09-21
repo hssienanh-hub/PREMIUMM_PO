@@ -22,7 +22,7 @@ DATABASE_PATH = 'bot_database.db'
 PORT = int(os.getenv('PORT', 8080))
 
 if not BOT_TOKEN or BOT_TOKEN == "8602849042:AAHCGsAPtTV-MfXr_ZDXkqotLqtbI8h3mEY":
-    print("❌8602849042:AAFtv3A_tavPc_T4jlmxd1aybtiK-C8qPZQ!")
+    print("❌8602849042:AAHCGsAPtTV-MfXr_ZDXkqotLqtbI8h3mEY!")
     sys.exit(1)
 
 # ==================== LOGGING ====================
